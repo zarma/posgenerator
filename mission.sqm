@@ -1,0 +1,342 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"avgani",
+		"ffaa_terrorista",
+		"CAMisc",
+		"camisc3",
+		"cawheeled2_lada",
+		"CAWheeled",
+		"CATracked"
+	};
+	addOnsAuto[]=
+	{
+		"ffaa_terrorista",
+		"CAMisc",
+		"camisc3",
+		"cawheeled2_lada",
+		"CAWheeled",
+		"CATracked",
+		"avgani"
+	};
+	randomSeed=16307791;
+	class Intel
+	{
+		briefingName="z-pos-generator V0.1";
+		briefingDescription="Tool for mission maker";
+		resistanceWest=0;
+		startWeather=0;
+		forecastWeather=0;
+		year=2008;
+		month=8;
+		day=8;
+		hour=10;
+		minute=0;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={2416.2139,111.58038,3335.4231};
+					id=0;
+					side="EAST";
+					vehicle="ffaa_terrorista_agf_AK";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={2358.4934,113.71265,3294.3779};
+					id=6;
+					side="EAST";
+					vehicle="ffaa_terrorista_agf_AK";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={2378.123,112.50108,3267.6934};
+					id=1;
+					side="EAST";
+					vehicle="ffaa_terrorista_agf_AK";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="nul=[this,""mkups0""] execVM ""extern\ups.sqf""";
+				};
+				class Item1
+				{
+					position[]={2374.3228,112.81328,3252.1821};
+					id=2;
+					side="EAST";
+					vehicle="ffaa_terrorista_agf_PK";
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={2391.8643,112.23466,3253.7766};
+					id=3;
+					side="EAST";
+					vehicle="ffaa_terrorista_agf_RPG";
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2361.9346,113.40741,3263.7146};
+					id=4;
+					side="EAST";
+					vehicle="ffaa_terrorista_agf_SVD";
+					leader=1;
+					skill=0.60000002;
+					init="nul=[this,""mkups0"",""RANDOMUP"",""SHOWMARKER""] execVM ""extern\ups.sqf""";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2330.5601,117.03286,3302.9126};
+					azimut=96.908188;
+					id=5;
+					side="EAST";
+					vehicle="ffaa_terrorista_agf_AK";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2388.0305,113.43664,3349.55};
+					azimut=-151.19421;
+					id=7;
+					side="EAST";
+					vehicle="ffaa_terrorista_ham_AK";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=10;
+		class Item0
+		{
+			position[]={2389.2815,112.42989,3331.457};
+			azimut=114.28862;
+			id=8;
+			side="EMPTY";
+			vehicle="UralWreck";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={2381.0471,112.27861,3334.6057};
+			azimut=43.324776;
+			id=9;
+			side="EMPTY";
+			vehicle="HMMWVWreck";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={2401.8342,111.87778,3333.084};
+			azimut=270;
+			id=10;
+			side="EMPTY";
+			vehicle="LADAWreck";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={2414.6345,111.06672,3370.2039};
+			azimut=-122.07098;
+			id=11;
+			side="EMPTY";
+			vehicle="Lada_base";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={2425.3865,111.39819,3332.5137};
+			azimut=94.761246;
+			id=12;
+			side="EMPTY";
+			vehicle="Lada_base";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={2444.4341,111.03176,3371.583};
+			azimut=24.626209;
+			id=13;
+			side="EMPTY";
+			vehicle="UralCivil";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={2456.9983,110.74853,3331.814};
+			azimut=95.033882;
+			id=14;
+			side="EMPTY";
+			vehicle="UralCivil";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={2481.9543,110.19687,3334.0515};
+			azimut=-87.179138;
+			id=15;
+			side="EMPTY";
+			vehicle="UralCivil2";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={2361.1187,112.64941,3340.7839};
+			id=16;
+			side="EMPTY";
+			vehicle="Fort_Barricade";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={1334.1399,148.46776,316.57776};
+			azimut=70.225723;
+			id=17;
+			side="EMPTY";
+			vehicle="M1A2_TUSK_MG";
+			skill=0.60000002;
+			init="this setfuel 0;";
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={2540.7412,109.33422,3232.96};
+			name="mkups0";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			a=500;
+			b=500;
+		};
+		class Item1
+		{
+			position[]={2371.4075,112.59731,3292.1108};
+			name="mkobjectif";
+			text="Rendez-vous";
+			type="mil_join";
+			colorName="ColorGreen";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"avgani"
+	};
+	addOnsAuto[]=
+	{
+		"avgani"
+	};
+	randomSeed=14623249;
+	class Intel
+	{
+		startWeather=0.2;
+		forecastWeather=0.30000001;
+		year=2008;
+		month=8;
+		day=8;
+		hour=16;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"avgani"
+	};
+	addOnsAuto[]=
+	{
+		"avgani"
+	};
+	randomSeed=12392324;
+	class Intel
+	{
+		startWeather=0.2;
+		forecastWeather=0.30000001;
+		year=2008;
+		month=8;
+		day=8;
+		hour=16;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"avgani"
+	};
+	addOnsAuto[]=
+	{
+		"avgani"
+	};
+	randomSeed=13757162;
+	class Intel
+	{
+		startWeather=0.2;
+		forecastWeather=0.30000001;
+		year=2008;
+		month=8;
+		day=8;
+		hour=16;
+		minute=0;
+	};
+};
